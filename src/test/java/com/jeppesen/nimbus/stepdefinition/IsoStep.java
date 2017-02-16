@@ -43,7 +43,7 @@ public class IsoStep {
     }
 
     @Then("^the alpha 3 code should be \"([^\"]*)\"$")
-    public void theAlphaCodeShouldBe(String expectedCode) throws Throwable {
+    public void theAlpha3CodeShouldBe(String expectedCode) throws Throwable {
 
         IsoOutput isoOutput = testSessionIso.getIsoOutput();
 
