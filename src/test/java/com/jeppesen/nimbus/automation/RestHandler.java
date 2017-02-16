@@ -16,12 +16,14 @@ public class RestHandler {
 
     public ValidatableResponse performGetRequest(String path, String accept) {
 
+
         return given()
                 .accept(accept)
                 .when()
                 .log().everything()
                 .get(path)
                 .then()
-                .log().everything();
+                .log().everything()
+                .statusCode(200);
     }
 }
